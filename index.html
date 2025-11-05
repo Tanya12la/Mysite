@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F.E.N.K.E.D. LLC | Technical Consulting & IT Support</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: #000;
+        color: #FFD700;
+        font-size: 20px;
+    }
+    h1, h2, h3 {
+        color: #FFD700;
+    }
+    h1 {
+        font-family: 'Times New Roman', serif;
+        font-weight: bold;
+        font-size: 48px;
+    }
+    section {
+        padding: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-bottom: 2px solid #FFD700;
+    }
+    .hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hero img {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        border: 4px solid #FFD700;
+        object-fit: cover;
+    }
+    .content {
+        max-width: 55%;
+    }
+    .services, .benefits, .process {
+        flex-direction: column;
+        text-align: left;
+    }
+    .services-item, .benefit-item, .process-step {
+        margin-bottom: 30px;
+    }
+    .contact {
+        position: relative;
+        color: #FFD700;
+        height: 100vh;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px;
+    }
+    .contact::before {
+        content: "";
+        background: url('https://plus.unsplash.com/premium_photo-1678990345948-4843f1522120?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1332') no-repeat center center/cover;
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        filter: brightness(0.3);
+    }
+    .contact-content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+    }
+    input, textarea {
+        background-color: #111;
+        color: #FFD700;
+        border: 2px solid #FFD700;
+        margin-bottom: 15px;
+        padding: 15px;
+        font-size: 18px;
+    }
+    button {
+        background-color: #FFD700;
+        color: #000;
+        padding: 15px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .contact-info {
+        width: 45%;
+        font-size: 22px;
+    }
+    footer {
+        background-color: #111;
+        color: #FFD700;
+        text-align: center;
+        padding: 20px;
+        font-size: 18px;
+    }
+    .contact-button {
+        background-color: #FFD700;
+        color: #000;
+        padding: 15px 30px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 5px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+    .contact-button:hover {
+        background-color: #e5c100;
+    }
+</style>
+</head>
+<body>
+
+<!-- Главный экран -->
+<section class="hero">
+    <div class="content">
+        <h1>F.E.N.K.E.D. LLC</h1>
+        <h2>Empowering Small Businesses with Reliable IT & Software Solutions</h2>
+        <p>At F.E.N.K.E.D. LLC, we provide technical consulting, IT and software support, and professional programming services tailored for small businesses. Our mission is to help you focus on growth while we ensure your technology works seamlessly and efficiently.</p>
+        <a href="#contact" class="contact-button">Contact Us</a>
+    </div>
+    <img src="https://media.istockphoto.com/id/2224175007/photo/online-customer-support-and-help-desk.webp?a=1&b=1&s=612x612&w=0&k=20&c=jVC0WiOi4jZOfxX3OrZDX7GAaJRr6cpwdEyT8SY29k4=" alt="Support Image">
+</section>
+
+<!-- Про нас -->
+<section id="about">
+    <div class="content">
+        <h2>Who We Are</h2>
+        <p>F.E.N.K.E.D. LLC is a technology-driven consulting firm dedicated to delivering top-notch IT support and software development services. Our team of experts specializes in solving real-world business challenges through tailored digital strategies, automation, and custom programming. We believe every small business deserves enterprise-level technology solutions without the enterprise price tag. Our hands-on approach ensures your systems stay optimized and secure, helping you stay competitive in today’s digital world.</p>
+    </div>
+    <img src="https://media.istockphoto.com/id/1164885329/photo/getting-lost-in-the-code.webp?a=1&b=1&s=612x612&w=0&k=20&c=xT758pcil066GUfQwGsF9LbfRz_VvOEfV5UrivzM5_A=" alt="About Image" style="width:350px;height:350px;border-radius:50%;border:4px solid #FFD700;object-fit:cover;">
+</section>
+
+<!-- Сервисы -->
+<section id="services" class="services">
+    <h2>Our Core Services</h2>
+    <div class="services-item">
+        <h3>Technical Consulting</h3>
+        <p>We assess your current technology setup and design a tailored strategy that aligns with your business goals. From hardware optimization to workflow automation, our consulting solutions make your operations smoother and more efficient.</p>
+    </div>
+    <div class="services-item">
+        <h3>IT and Software Support</h3>
+        <p>We provide ongoing IT maintenance, troubleshooting, and remote assistance to keep your systems running without interruption. Our team ensures quick responses, preventive monitoring, and long-term reliability.</p>
+    </div>
+    <div class="services-item">
+        <h3>Custom Programming for Small Business</h3>
+        <p>We develop tailored software and tools that simplify business processes, improve productivity, and enhance customer experience. Our programming expertise helps bring your ideas to life efficiently and affordably.</p>
+    </div>
+</section>
+
+<!-- Преимущества -->
+<section id="benefits" class="benefits">
+    <h2>Why Work With Us</h2>
+    <div class="benefit-item">
+        <h3>Personalized Approach</h3>
+        <p>We take time to understand your specific needs, offering custom solutions—not generic ones—to ensure your business runs at peak performance.</p>
+    </div>
+    <div class="benefit-item">
+        <h3>Trusted Expertise</h3>
+        <p>Our team has years of experience in IT consulting and software development for small businesses, ensuring reliable and professional service.</p>
+    </div>
+    <div class="benefit-item">
+        <h3>Proactive Support</h3>
+        <p>We monitor, maintain, and upgrade your systems before problems arise—saving you time, money, and stress.</p>
+    </div>
+</section>
+
+<!-- Наш процесс -->
+<section id="process" class="process">
+    <h2>How We Work</h2>
+    <div class="process-step">
+        <h3>1. Discovery & Planning</h3>
+        <p>We begin with understanding your business goals, challenges, and systems to craft a customized technology roadmap.</p>
+    </div>
+    <div class="process-step">
+        <h3>2. Implementation</h3>
+        <p>Our team deploys the right solutions, sets up systems, and ensures seamless integration without interrupting your workflow.</p>
+    </div>
+    <div class="process-step">
+        <h3>3. Continuous Support</h3>
+        <p>We provide ongoing monitoring, updates, and IT support to maintain stability, security, and long-term growth.</p>
+    </div>
+</section>
+
+<!-- Контакты -->
+<section id="contact" class="contact">
+    <div class="contact-content">
+        <form>
+            <h2>Get in Touch</h2>
+            <p>Let’s make your technology work smarter for your business. Reach out to us today — our team is ready to help you transform your digital operations.</p>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:info@fenkedllc.pro" style="color:#FFD700;">info@fenkedllc.pro</a></p>
+            <p>Address: 644 Glendora Ave, Akron, Ohio 44320</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2025 F.E.N.K.E.D. LLC — Empowering Small Businesses Through Technology
+</footer>
+
+</body>
+</html>
